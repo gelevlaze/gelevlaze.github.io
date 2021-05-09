@@ -1,0 +1,391 @@
+/* general page resets */
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: fit-content;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* NAVBAR */
+
+nav {
+    font-weight: 600;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fefffe;
+}
+
+nav .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left {
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+label,
+input {
+    display: none;
+}
+
+
+/* NAV DROPDOWN */
+
+nav li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+nav li:hover {
+    background-color: white;
+}
+
+nav .dropdown {
+    position: relative;
+    text-align: center;
+}
+
+nav .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fefffe;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* HERO BANNER */
+
+.bold {
+    font-weight: 600;
+}
+
+.word-spacing {
+    word-spacing: 0.5em;
+}
+
+.margin-btm-2 {
+    margin-bottom: 3em;
+}
+
+.hero-banner {
+    padding-top: 18%;
+    padding-bottom: 18%;
+    background-color: #f7f7f5;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313031;
+    text-align: center;
+}
+
+.sub-header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #313031;
+    text-align: center;
+}
+
+.hero-banner a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 2em;
+    background-color: #313031;
+    box-shadow: 0 0.1em 0.1em #727272;
+}
+
+
+/* DASHBOARD STATS */
+
+.dash-stats {
+    background-color: #fefffe;
+    padding: 7% 0 7% 0;
+}
+
+.dash-stats .inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 100%;
+}
+
+.bg-orange {
+    background-color: #fe6b56;
+}
+
+.bg-pink {
+    background-color: #9a58b6;
+}
+
+.bg-green {
+    background-color: #41c3ac;
+}
+
+.bg-blue {
+    background-color: #3598da;
+}
+
+.dash-stats .inner .box {
+    padding: 2em 8em;
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em #727272;
+    margin: 3px;
+}
+
+.custom-font {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+/* SECTION-1 */
+
+h1 {
+    color: #313031;
+    text-align: center;
+}
+
+section .section-1-links {
+    background-color: #f9f9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section .section-1-links a {
+    margin: 0.3em;
+    background-color: #eeefef;
+    text-decoration: none;
+    padding: 1em 2em;
+    color: #313031;
+    box-shadow: 0 0.1em 0.1em #727272;
+    margin-bottom: 7%;
+}
+
+section .section-1-links :first-child {
+    background-color: black;
+    color: white;
+}
+
+
+/* Thought it should be with hover, commented it out later */
+
+
+/* section .section-1-links a:hover {
+  background-color: black;
+  color: white;
+} */
+
+
+/* CARDS */
+
+.section-1 .card {
+    box-shadow: 0 0.5em 0.5em #727272;
+    display: flex;
+}
+
+section .card img:hover {
+    border: 1px solid black;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-wrapper .card {
+    display: flex;
+    flex: 0 1 33.3333%;
+    justify-content: center;
+    margin-bottom: 5%;
+    padding: 5px;
+}
+
+.card-wrapper .card img {
+    box-shadow: 0 0.5em 0.5em #a8a7a7;
+}
+
+
+/* SECTION-2 */
+
+section p {
+    text-align: center;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+    color: #313031;
+}
+
+hr {
+    width: 5%;
+}
+
+section .feature-wrapper {
+    /* width: 90%;
+  margin-left: auto;
+  margin-right: auto; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 5em;
+}
+
+.feature-wrapper .feature-bundle ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-wrapper .feature-bundle ul li {
+    list-style: none;
+    flex: 0 0 33.333333%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #454445;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+footer {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+footer .social-links ul {
+    list-style: none;
+}
+
+footer .social-links ul li {
+    display: inline;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .social-links ul li:not(:last-child) {
+    margin-right: 1em;
+}
+
+footer .social-links ul li:last-child {
+    margin-left: -1.3em;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 425px) {
+    /* NAV MENU */
+    nav .right {
+        display: none;
+    }
+    label {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        float: right;
+    }
+    .right {
+        text-align: center;
+        width: 100%;
+    }
+    .right ul li {
+        clear: right;
+        display: block;
+        margin: 0;
+    }
+    #toggle:checked+.right {
+        display: block;
+    }
+    /* DASHBOARD */
+    .dash-stats .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dash-stats .inner .box {
+        text-align: center;
+        width: 50%;
+        margin: 10px;
+        padding: 6rem 1rem;
+    }
+    .custom-font {
+        font-size: 60px;
+    }
+    /* SECTION-1 */
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1-links {
+        flex-wrap: wrap;
+    }
+    /* SECTION-2 */
+    section .feature-wrapper {
+        font-size: 10px;
+        line-height: none;
+    }
+    .feature-wrapper .feature-bundle ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feature-wrapper .feature-bundle ul li {
+        list-style: none;
+        flex: 0 0 50%
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
